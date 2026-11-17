@@ -1,6 +1,6 @@
 # Rotas e componentes em React
 
-Terceira atividade de React: website com páginas, layout compartilhado, carregamento sob demanda, tratamento de rotas inválidas e parâmetros de URL.
+Terceira atividade de React: site com páginas em português, estrutura compartilhada, carregamento sob demanda, tratamento de rotas inválidas e parâmetros de URL.
 
 ## Executar
 
@@ -38,12 +38,12 @@ npm run preview
 
 | Endereço | Página |
 | --- | --- |
-| `/` | Home |
-| `/about` | About |
-| `/contact` | Contact |
-| `/user/1` | Perfil de Ana Silva |
-| `/user/2` | Perfil de Bruno Santos |
-| `/user/:id` | Perfil identificado pelo parâmetro `id`; outros identificadores exibem uma mensagem de usuário não encontrado |
+| `/` | Início |
+| `/sobre` | Sobre |
+| `/contato` | Contato |
+| `/usuario/1` | Perfil de Ana Silva |
+| `/usuario/2` | Perfil de Bruno Santos |
+| `/usuario/:id` | Perfil identificado pelo parâmetro `id`; outros identificadores exibem uma mensagem de usuário não encontrado |
 | Outros endereços | Página 404 |
 
 Os perfis são dados locais de exemplo.
@@ -69,14 +69,14 @@ src/
 
 - `App.jsx` configura `BrowserRouter`, `Routes` e `Route`.
 - As páginas usam `Link` para a navegação.
-- `Layout` reúne `Header`, `Footer` e `Outlet`, mantendo o conteúdo das páginas dentro do layout comum.
+- `Layout` reúne o cabeçalho (`Header`), o rodapé (`Footer`) e `Outlet`, mantendo o conteúdo das páginas dentro da estrutura comum.
 - As páginas são importadas com `React.lazy`. `React.Suspense` exibe uma mensagem enquanto o arquivo da página é carregado.
 - `User` lê o identificador com `useParams`.
 - A rota `*` apresenta `NotFound` quando o caminho não existe.
 
 ## Conferir o funcionamento
 
-1. Navegue entre Home, About e Contact pelo cabeçalho e pelos links das páginas.
+1. Navegue entre Início, Sobre e Contato pelo cabeçalho e pelos atalhos das páginas.
 2. Abra os perfis de Ana e Bruno e observe a mudança do identificador e do conteúdo.
 3. Acesse `/pagina-inexistente` para visualizar a página 404.
 4. Observe que o cabeçalho e o rodapé permanecem presentes em todas as páginas.

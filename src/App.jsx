@@ -15,9 +15,9 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="user/:id" element={<User />} />
+          <Route path="sobre" element={<About />} />
+          <Route path="contato" element={<Contact />} />
+          <Route path="usuario/:id" element={<User />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

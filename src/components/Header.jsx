@@ -7,9 +7,9 @@ export default function Header() {
       <div className="container">
         <span className="marca">Meu site de estudos</span>
         <nav aria-label="Navegação principal">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/">Início</Link>
+          <Link to="/sobre">Sobre</Link>
+          <Link to="/contato">Contato</Link>
         </nav>
       </div>
     </header>
